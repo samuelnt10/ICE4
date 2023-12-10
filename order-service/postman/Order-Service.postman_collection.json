@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "c2d5ed8c-4eab-4d06-953a-f657e1a7177f",
+		"name": "Order-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27965064"
+	},
+	"item": [
+		{
+			"name": "Place  Holder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderLineItemDtoList\" : [\n        {\n            \"skuCode\" : \"sku_123456\",\n            \"price\" : 200,\n            \"quantity\" : 1\n        },\n        {\n            \"skuCode\" : \"sku_789012\",\n            \"price\" : 300,\n            \"quantity\" : 4\n        },\n        {\n            \"skuCode\" : \"sku_55555\",\n            \"price\" : 1000,\n            \"quantity\" : 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
